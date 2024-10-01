@@ -113,7 +113,7 @@ create or replace view weather_joined_with_major_cities as
   join weather_forecast weather on zip.zip_geo_name = weather.postal_code
   group by city.geo_id, city.geo_name, city.total_population;
 
---ADDED
+-- STEP 5: INSERT CHANGES HERE
 create or replace view attractions as select
     city.geo_id,
     city.geo_name,
